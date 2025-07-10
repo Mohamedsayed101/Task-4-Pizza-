@@ -1,0 +1,179 @@
+<!-- made by Mohamed Sayed Omar El-sayed -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Task Two" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Task Two" />
+    <meta name="author" content="Mohamed Sayed" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="./images/pizza-1.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Make an Order Page</title>
+  </head>
+  <body>
+      
+      <!-- Start Header -->
+      <header>
+      <div class="logo-container">
+        <h1 class="logo">MO.SAYED</h1>
+      </div>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="./main.html">Main</a></li>
+          <li><a href="./makeOrder.html">Make an Order</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+            
+    <!-- Start Main of page  -->
+    <main id="main">
+
+        <!-- Start Form of Order -->
+        <form action="./thankyou.html" method="post" id="orderForm">
+
+            <!-- Start Info Section -->
+            <section id="orderinfo">
+                <fieldset class="padding">
+                    <legend>Your Information</legend>
+
+                    <label for="name" >Name: </label>
+                    <input type="text" id="name" name="name" required />
+
+                    <br><br>
+
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" >
+
+                    <br><br>
+
+                    <label for="phone">Telephone Number:</label>
+                    <input type="tel" id="phone" name="phone" required  />
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <br><br>
+
+                    <label for="instruction">Special Instructions:</label>
+                    <textarea 
+                        name="instruction" 
+                        id="instruction" 
+                        placeholder="No more than 400 characters long" 
+                        cols="45" 
+                        rows="4" 
+                        maxlength="400"></textarea>
+                </fieldset>
+
+            </section>
+            <!-- End Info Section -->
+
+            <!-- Start Choose Pizza Section -->
+            <section class="pizza-section">
+
+                <fieldset class="padding">
+                <legend>Pizza specs</legend>
+                
+                <!-- Start crust-options Section -->
+                <fieldset class="padding">
+                    <legend>Crust (Choose one):</legend>
+
+                    <div id="crust-options">
+                        <input type="radio" name="Crust" id="classic" value="classic">
+                        <label for="classic">Classic White</label>
+
+                        <br>
+
+                        <input type="radio" name="Crust" id="multigrain" value="multigrain">
+                        <label for="multigrain">Multigrain</label>
+
+                        <br>
+
+                        <input type="radio" name="Crust" id="StuffedCrust" value="StuffedCrust">
+                        <label for="StuffedCrust">choose-stuffed crust</label>
+
+                        <br>
+
+                        <input type="radio" name="Crust" id="glutenFree" value="glutenFree">
+                        <label for="glutenFree">Gluten-free</label>
+                    </div>
+                </fieldset>
+                <!-- End crust-options Section -->
+
+                <!-- Start Topping-options Section -->
+                <fieldset class="padding">
+                    <legend>Toppings(Choose as many as you want):</legend>
+                    
+                    <div>
+
+                        <input type="checkbox" name="topping" id="redSauce" value="redSauce">
+                        <label for="redSauce">Red Sauce</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="whiteSauce" value="whiteSauce">
+                        <label for="whiteSauce">White Sauce</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="mozzarella-Cheese" value="mozzarella-Cheese">
+                        <label for="mozzarella-Cheese">Mozzarella Cheese</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                        <br>
+                        <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                        
+                        <br>
+                        
+                        <input type="checkbox" name="topping" id="peppers" value="peppers">
+                        <label for="peppers">Peppers</label>
+                        
+                        <br>
+                        
+                        <input type="checkbox" name="topping" id="anchovies" value="anchovies">
+                        <label for="anchovies">Anchovies</label>
+                    </div>
+                </fieldset>
+                <!-- End Topping-options Section -->
+
+                <!-- Start Number Part -->
+                <fieldset class="padding">
+                    <legend>Number</legend>
+                    <div>
+                        <label for="number">How many pizzas:</label>
+                        <input type="number" id="number" name="number" min="1" max="10">
+                    </fieldset>
+                </fieldset>
+                <!-- End Number Part -->
+            
+            </section>
+            <!-- End Choose Pizza Section -->
+
+            <br><br>
+
+            <!-- Start Submit Section -->
+            <section class="submit-section">
+                <input type="submit" id="submitBtn" value="Begin me a pizza!">
+                <input type="reset" id="resetBtn" value="Reset">
+            </section>
+            <!-- End Submit Section -->
+
+        </form>
+        <!-- End Form of Order -->
+
+</main>
+<!-- End Main  -->
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- made by Mohamed Sayed Omar El-sayed -->

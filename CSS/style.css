@@ -1,16 +1,220 @@
 /* made by Mohamed Sayed Omar El-sayed */
-.padding {
-    padding: 20px 10px;
+
+/* Start Main Variables */
+:root {
+    --main-color: #570606c6;
+    --secondary-color: #a2a4bf;
+    --text-color: #fff;
+    --highlight-color: #e63946;
+    --bg-box: bisque;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --padding: 15px;
+
 }
-#navbar {
+/* End Main Variables */
+
+/* Start Golbal Elements  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0px;
 }
-#nav-links{
-    margin: 0;
-    padding: 0;
+
+* {
+    box-sizing: border-box;
+}
+/* End Golbal Elements  */
+
+
+/* Start Header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 1px;
 }
-#navbar li {
+
+header .logo-container {
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(232, 7, 7);
+}
+
+header .logo::first-letter {
+    color: rgb(0, 203, 135);
+    font-size: 30px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+nav ul {
     list-style: none;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(179, 154, 154);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid red;
+}
+/* End Header */
+
+/* Start main */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.submit-section {
+    text-align: center;
+}
+
+#submitBtn,
+#resetBtn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover,
+#resetBtn:hover {
+    background-color: var(--highlight-color);
+}
+/* End Main */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+    }
+
+    #nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    main .Box-image img {
+        width: 90%;
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* End Responsive */

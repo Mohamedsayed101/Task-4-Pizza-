@@ -1,33 +1,76 @@
 <!-- made by Mohamed Sayed Omar El-sayed -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-  </head>
-  <body>
-    <header>
-      <h1>Contact Us</h1>
-    </header>
+<head>
 
-    <main>
-      <section id="contact-info">
-        <h2>Get in Touch</h2>
-        <p>
-          If you have any questions or need assistance, please reach out to us:
-        </p>
-        <ul>
-          <li>
-            Name: <strong>Mohamed Sayed Omar El-sayed</strong>
-          <li>
-            Email:
-            <a href="mailto:ms3655@fayoum.edu.eg">ms3655@fayoum.edu.eg</a>
-          </li>
-          <li>Phone: <a href="tel:+201234567890">+20 123 456 7890</a></li>
-          <li>Address: 123 Main Street, Cairo, Egypt</li>
-        </ul>
-      </section>
-    </main>
-  </body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Page for Pizza Website" />
+  <meta name="author" content="Mohamed Sayed Omar El-sayed" />
+  <meta name="keywords" content="contact, pizza, order, support" />
+  <meta name="theme-color" content="#ff6347" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="./images/صورتى.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/contact.css" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Contact Us Page</title>
+</head>
+<body>
+
+  <!-- Start Header -->
+  <header>
+    <div class="logo-container">
+      <h1 class="logo">MO.SAYED</h1>
+    </div>
+
+    <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="./main.html">Main</a></li>
+        <li><a href="./makeOrder.html">Make an Order</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Main Content -->
+  <main>
+    <!-- Strat Contact Section -->
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or need assistance, feel free to contact us:</p>
+      <ul>
+        <li><i class="fas fa-user"></i> <strong>Name:</strong> Mohamed Sayed Omar El-sayed</li>
+        <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ms3655@fayoum.edu.eg">ms3655@fayoum.edu.eg</a></li>
+        <li><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+201234567890">+20 123 456 7890(Fake)</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Main Street, Cairo, Egypt</li>
+      </ul>
+    </section>
+    <!-- End Contact Section -->
+    
+    <!-- Start Contact Form -->
+    <section class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="thankyou.html" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <!-- End Contact Form -->
+
+  </main>
+  <!-- End Main Content -->
+  
+  <!-- Start Footer -->
+  <footer>
+    <p>&copy; 2025 <span class="foot-name">MO.SAYED</span>. All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->
+</body>
 </html>

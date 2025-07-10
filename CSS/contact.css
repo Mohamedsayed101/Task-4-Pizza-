@@ -1,0 +1,267 @@
+/* made by Mohamed Sayed Omar El-sayed */
+
+/* Start Header */
+:root {
+  --bg-light: #f9f9f9;
+  --accent-color: #e63946;
+  --text-dark: #333;
+  --font-main: 'Arial', sans-serif;
+  --main-color: #570606c6;
+  --secondary-color: #a2a4bf;
+  --text-color: #fff;
+  --highlight-color: #e63946;
+  --bg-box: bisque;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --padding: 15px;
+
+}
+
+/* End Header */
+
+/* Start Golbal Elements */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* End Golbal Elements */
+
+/* Start Header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 1px;
+}
+
+header .logo-container {
+  padding: 5px 10px;
+  background-color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(232, 7, 7);
+}
+
+header .logo::first-letter {
+  color: rgb(0, 203, 135);
+  font-size: 30px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(179, 154, 154);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid red;
+}
+
+/* End Header */
+
+/* Start Main */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.contact-section {
+  margin-bottom: 30px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+
+.contact-section ul {
+  list-style: none;
+  line-height: 2;
+}
+
+.contact-section li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-section i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+/* End Main */
+
+/* Start Contact Form */
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* End Contact Form */
+
+/* Start Footer */
+footer {
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.foot-name {
+  color: rgb(59, 59, 3);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  main {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+/* End Footer */
+
+/* Start Respinsive */
+@media (max-width: 1024px) {
+  main .Box-image img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    margin: 20px 5px;
+  }
+
+
+  main .Box-text,
+  main .Box-image {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  main .Box-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
+
+/* End Responsive */
