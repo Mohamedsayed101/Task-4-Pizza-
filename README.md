@@ -26,21 +26,32 @@ This project is a multi-page pizza ordering website built using **HTML5** and **
 ## 📁 Project Structure
 
 Task-Two-/
-├── main.html             # Home page with intro and layout
-├── makeOrder.html        # Pizza order form with user inputs
-├── contact.html          # Contact page with developer info
-├── thankyou.html         # Thank you/confirmation page after submitting order
 
-├── CSS/                  # All styling files
-│   ├── style.css         # Global/shared styles (header, form, buttons, etc.)
-│   ├── contact.css       # Styling specific to the contact page
-│   └── thankyou.css      # Styling for the thank-you page
+    ├── main.html             # Home page with intro and layout
 
-├── images/               # All project images
-│   ├── صورتى.jpg         # Developer’s photo
-│   └── pizza-1.jpeg      # Pizza image for main section or decoration
+    ├── makeOrder.html        # Pizza order form with user inputs
 
-└── script.js             # Optional JavaScript (validation, interactivity)
+    ├── contact.html          # Contact page with developer info
+
+    ├── thankyou.html         # Thank you/confirmation page after submitting order
+
+    ├── CSS/                  # All styling files
+
+    │   ├── main.css          # Styling specific to the main page
+
+    │   ├── style.css         #Styling specific to the make an order page
+
+    │   ├── contact.css       # Styling specific to the contact page
+
+    │   └── thankyou.css      # Styling for the thank-you page
+
+    ├── images/               # All project images
+
+    │   ├── myphoto.jpeg       # me image for about section or decoration
+                                                                                                                          --|   
+    │   └── pizza-1.jpeg      # Pizza image for main section or decoration
+
+    └── script.js             # Optional JavaScript (validation, interactivity)
 
 
 ---
@@ -106,6 +117,7 @@ Task-Two-/
   --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   --padding: 15px;
 }
+```
 
 ## 🧠 Layout Principles
 
@@ -143,8 +155,20 @@ Task-Two-/
 
 
 ---
+---
 
-You can save this content as a file named `README.md` in your project root.
+## 🙏 Final Words
 
-Would you like me to help you create a downloadable version or GitHub push-ready structure too?
+This project is more than just a task—it's a small step in my journey to become a better developer.
+
+Every line of code was written with passion and a desire to learn and grow.
+
+Thank you for taking the time to explore it.  
+If you have any feedback or suggestions, I’d love to hear from you!
+
+> _"Great things are done by a series of small things brought together."_  
+> — *Vincent Van Gogh*
+
+---
+
   
