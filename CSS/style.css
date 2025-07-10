@@ -1,0 +1,16 @@
+/* made by Mohamed Sayed Omar El-sayed */
+.padding {
+    padding: 20px 10px;
+}
+#navbar {
+    padding: 0px;
+}
+#nav-links{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navbar li {
+    list-style: none;
+    margin-right: 5px;
+}
